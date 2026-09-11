@@ -4,7 +4,7 @@ kind: Kustomization
 helmCharts:
   - name: opentelemetry-operator
     repo: https://open-telemetry.github.io/opentelemetry-helm-charts
-    version: 0.113.1
+    version: 0.122.0
     releaseName: otel-operator
     namespace: monitoring
     valuesFile: values.yaml
