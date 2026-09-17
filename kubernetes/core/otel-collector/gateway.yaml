@@ -7,12 +7,12 @@ spec:
   mode: statefulset
   replicas: 1
   serviceAccount: otel-collector
-  image: ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.152.0@sha256:f41d7995565df3733b7568702073a9c490792f9c6ac60684fe6a4da21a313f8d
+  image: ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.161.0@sha256:fd328de2552466ad78385e1b1289c3f2402b1c45f265b252aab1955b42845ac1
 
   # Target Allocator for dynamic discovery on Gateway (Requires StatefulSet mode)
   targetAllocator:
     enabled: true
-    image: ghcr.io/open-telemetry/opentelemetry-operator/target-allocator:v0.151.0@sha256:a34d608ea57c2e269b34b118a4791e14d3ad88df9c20786522efb6f231252269
+    image: ghcr.io/open-telemetry/opentelemetry-operator/target-allocator:v0.159.0@sha256:03b70585d71e862edbf311f4592a5e876b056b5f5009ada5345c5625e9ac0382
     serviceAccount: otel-collector
     prometheusCR:
       enabled: true
